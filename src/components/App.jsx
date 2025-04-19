@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Description from '../components/description/Description';
-import css from './App.module.css';
+import Options from  '../components/Options/Options';
+import Styles from '../components/Options/Options.module.css'
 
 function App() {
   const [feedback, setFeedback] = useState({
@@ -17,7 +18,7 @@ function App() {
   };
 
   return (
-    <div className={css.app}>
+    <div>
       <Description />
       <Options updateFeedback={updateFeedback} />
     </div>
